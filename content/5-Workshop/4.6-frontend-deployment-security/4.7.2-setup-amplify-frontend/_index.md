@@ -19,31 +19,31 @@ AWS Amplify provides mechanisms for building, hosting, and publishing frontends 
 1. Create a new Amplify app and select **GitHub** as the source provider.
 2. Choose the EduTrust repository and the deployment branch (e.g. `main`). If your repo is a monorepo, set the root directory (e.g. `frontend`).
 
-   ![Select repository and branch](choos_repo_branch.png)
+   ![Select repository and branch](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/choos_repo_branch.png)
 
    *Select the repo/branch and set **Monorepo root directory** if applicable.*
 
 3. Configure build settings (framework, build command, output directory).
 
-   ![App settings](choose_advance_settings.png)
+   ![App settings](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/choose_advance_settings.png)
 
    *Verify the detected framework/build settings, then open **Advanced settings** if you need to add environment variables.*
 
 4. Open **Advanced settings** and review build instance / environment variables.
 
-   ![Advanced settings](add_new.png)
+   ![Advanced settings](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/add_new.png)
 
    *This is where you configure build resources and add environment variables for the build.*
 
 5. Add environment variables required by the frontend (example: `NEXT_PUBLIC_API_URL`).
 
-   ![Add environment variables](add_key.png)
+   ![Add environment variables](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/add_key.png)
 
    *Add environment variables under **Advanced settings → Environment variables**.*
 
 6. Review and choose **Save and deploy**.
 
-   ![Review and save](save.png)
+   ![Review and save](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/save.png)
 
    *Double-check repo/branch/build settings and variables, then deploy.*
 
@@ -53,41 +53,41 @@ Prerequisite: complete **4.6.1** so your domain is managed in Route 53 (nameserv
 
 1. In Amplify, open your app → **Hosting → Domain management** → **Add domain**.
 
-   ![Domain management](add_domain.png)
+   ![Domain management](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/add_domain.png)
 
    *Go to **Hosting → Domain management** and choose **Add domain**.*
 
 2. Enter your root domain (e.g. `edu-trust.app`) and continue.
 
-   ![Enter root domain](enter_domain.png)
+   ![Enter root domain](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/enter_domain.png)
 
    *Enter your root domain and check domain availability.*
 
 3. Configure subdomains (e.g. add `www`). If you do not want the root domain, choose **Exclude root**, then **Add domain**.
 
-   ![Configure subdomains](enter_sub_domain_click_exclude_root_add_domain.png)
+   ![Configure subdomains](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/enter_sub_domain_click_exclude_root_add_domain.png)
 
    *Add subdomains and choose **Exclude root** if needed.*
 
 4. Amplify creates DNS validation / routing records. Confirm the records exist in Route 53.
 
-   ![Route 53 records created](check_route53_have_record.png)
+   ![Route 53 records created](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/check_route53_have_record.png)
 
    *Verify Amplify-created records (CNAME/ALIAS) appear in the hosted zone.*
 
 5. Wait until the domain status becomes **Available**, then open the domain to verify HTTPS.
 
-   ![Wait for domain to be ready](wating_success_click_link_domain_to_check.png)
+   ![Wait for domain to be ready](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/wating_success_click_link_domain_to_check.png)
 
    *Wait for provisioning to finish, then click the domain URL to verify it loads with HTTPS.*
 
-   ![Custom domain available](custom_domain.png)
+   ![Custom domain available](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/custom_domain.png)
 
    *Domain shows **Available** when SSL and routing are ready.*
 
 6. (Optional) If you manage your own SSL certificate (not Amplify-managed), verify the certificate status in ACM is **Issued**.
 
-   ![ACM certificate issued](check_acm_success.png)
+   ![ACM certificate issued](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/check_acm_success.png)
 
    *ACM shows **Issued** when DNS validation is complete.*
 

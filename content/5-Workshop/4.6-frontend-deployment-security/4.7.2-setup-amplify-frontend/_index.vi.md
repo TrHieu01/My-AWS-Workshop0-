@@ -19,31 +19,31 @@ AWS Amplify cung cấp cơ chế build, host và phát hành frontend theo nhán
 1. Tạo ứng dụng Amplify mới và chọn **GitHub** làm nguồn code.
 2. Chọn repo EduTrust và nhánh triển khai (ví dụ `main`). Nếu là monorepo thì nhập root directory (ví dụ `frontend`).
 
-   ![Chọn repo và branch](choos_repo_branch.png)
+   ![Chọn repo và branch](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/choos_repo_branch.png)
 
    *Chọn repo/branch và cấu hình **Monorepo root directory** nếu cần.*
 
 3. Kiểm tra cấu hình build (framework, build command, output directory).
 
-   ![Cấu hình app](choose_advance_settings.png)
+   ![Cấu hình app](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/choose_advance_settings.png)
 
    *Xác nhận build settings, sau đó mở **Advanced settings** nếu cần thêm biến môi trường.*
 
 4. Mở **Advanced settings** và kiểm tra build instance / environment variables.
 
-   ![Advanced settings](add_new.png)
+   ![Advanced settings](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/add_new.png)
 
    *Đây là nơi cấu hình tài nguyên build và thêm biến môi trường cho quá trình build.*
 
 5. Thêm biến môi trường cho frontend (ví dụ `NEXT_PUBLIC_API_URL`).
 
-   ![Thêm biến môi trường](add_key.png)
+   ![Thêm biến môi trường](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/add_key.png)
 
    *Thêm biến trong **Advanced settings → Environment variables**.*
 
 6. Review và bấm **Save and deploy**.
 
-   ![Review và deploy](save.png)
+   ![Review và deploy](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/save.png)
 
    *Kiểm tra lại repo/branch/build settings/variables rồi deploy.*
 
@@ -53,39 +53,39 @@ AWS Amplify cung cấp cơ chế build, host và phát hành frontend theo nhán
 
 1. Vào Amplify, mở app → **Hosting → Custom Domains** → **Add domain**.
 
-   ![Domain management](add_domain.png)
+   ![Domain management](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/add_domain.png)
 
    *Vào **Hosting → Custom Domains** và chọn **Add domain**.*
 
 2. Nhập root domain (ví dụ `edu-trust.app`) rồi tiếp tục.
 
-   ![Nhập root domain](enter_domain.png)
+   ![Nhập root domain](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/enter_domain.png)
 
    *Nhập root domain và kiểm tra domain availability.*
 
 3. Cấu hình subdomain (ví dụ thêm `www`). Nếu không dùng root domain thì chọn **Exclude root**, sau đó bấm **Add domain**.
 
-   ![Cấu hình subdomain](enter_sub_domain_click_exclude_root_add_domain.png)
+   ![Cấu hình subdomain](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/enter_sub_domain_click_exclude_root_add_domain.png)
 
    *Thêm subdomain và chọn **Exclude root** nếu cần.*
 
 4. Amplify sẽ tạo DNS validation / routing record. Kiểm tra các record đã có trong Route 53.
 
-   ![Route 53 đã có record](check_route53_have_record.png)
+   ![Route 53 đã có record](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/check_route53_have_record.png)
 
    *Xác nhận các record do Amplify tạo (CNAME/ALIAS) xuất hiện trong hosted zone.*
 
 5. Chờ đến khi domain ở trạng thái **Available**, rồi mở domain để kiểm tra HTTPS.
    
-   ![Custom domain Available](available_domain.png)
+   ![Custom domain Available](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/available_domain.png)
 
-   ![updated domain](your_domain_is_updated.png)
+   ![updated domain](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/your_domain_is_updated.png)
 
    *Khi hiện **Available** nghĩa là SSL và routing đã sẵn sàng và domain đã được cập nhật.*
 
 6. (Tuỳ chọn) Nếu bạn tự quản lý SSL certificate (không dùng Amplify-managed), kiểm tra chứng chỉ trong ACM ở trạng thái **Issued**.
 
-   ![ACM Issued](check_acm_success.png)
+   ![ACM Issued](/images/5-Workshop/4.6-frontend-deployment-security/4.7.2-setup-amplify-frontend/check_acm_success.png)
 
    *ACM hiện **Issued** khi DNS validation đã hoàn tất.*
 

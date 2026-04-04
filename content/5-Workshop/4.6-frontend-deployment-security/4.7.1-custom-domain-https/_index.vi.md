@@ -14,23 +14,23 @@ Trong phần này, bạn thiết lập Route 53 cho domain mua ở nhà cung c�
 
 1. Tạo Hosted Zone trong Route 53 cho domain.
 
-   ![Danh sách Hosted zones](create.png)
+   ![Danh sách Hosted zones](/images/5-Workshop/4.6-frontend-deployment-security/4.7.1-custom-domain-https/create.png)
 
    *Trong Route 53 → **Hosted zones**, chọn **Create hosted zone**.*
 
-   ![Tạo Hosted Zone](fill-info.png)
+   ![Tạo Hosted Zone](/images/5-Workshop/4.6-frontend-deployment-security/4.7.1-custom-domain-https/fill-info.png)
 
    *Nhập **Domain name**, giữ **Type = Public hosted zone**, sau đó bấm **Create hosted zone**.*
 
 2. Lấy danh sách Nameservers (NS) từ Hosted Zone.
 
-   ![Bản ghi NS trong Hosted Zone](ns.png)
+   ![Bản ghi NS trong Hosted Zone](/images/5-Workshop/4.6-frontend-deployment-security/4.7.1-custom-domain-https/ns.png)
 
    *Mở Hosted Zone vừa tạo và sao chép 4 giá trị trong bản ghi **NS**.*
 
 3. Vào Name.com và cập nhật Nameserver trỏ về Route 53.
 
-   ![Cập nhật Nameservers trên Name.com](domain.png)
+   ![Cập nhật Nameservers trên Name.com](/images/5-Workshop/4.6-frontend-deployment-security/4.7.1-custom-domain-https/domain.png)
 
    *Dán 4 Nameserver từ Route 53 vào mục **Manage Nameservers** trên Name.com và lưu thay đổi.*
 

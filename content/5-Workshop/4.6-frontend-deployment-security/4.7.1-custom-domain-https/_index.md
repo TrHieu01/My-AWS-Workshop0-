@@ -14,23 +14,23 @@ In this section, you set up Route 53 for a domain purchased at a 3rd-party regis
 
 1. Create a Hosted Zone in Route 53 for your domain.
 
-   ![Route 53 hosted zones](create.png)
+   ![Route 53 hosted zones](/images/5-Workshop/4.6-frontend-deployment-security/4.7.1-custom-domain-https/create.png)
 
    *In Route 53 → **Hosted zones**, choose **Create hosted zone**.*
 
-   ![Create hosted zone form](fill-info.png)
+   ![Create hosted zone form](/images/5-Workshop/4.6-frontend-deployment-security/4.7.1-custom-domain-https/fill-info.png)
 
    *Enter your domain name, keep **Type = Public hosted zone**, then choose **Create hosted zone**.*
 
 2. Get the Nameservers (NS) from the Hosted Zone.
 
-   ![Hosted zone NS records](ns.png)
+   ![Hosted zone NS records](/images/5-Workshop/4.6-frontend-deployment-security/4.7.1-custom-domain-https/ns.png)
 
    *Open the Hosted Zone and copy the 4 NS values from the **NS** record.*
 
 3. Update Nameservers on your domain registrar (Name.com) to point to Route 53.
 
-   ![Name.com manage nameservers](domain.png)
+   ![Name.com manage nameservers](/images/5-Workshop/4.6-frontend-deployment-security/4.7.1-custom-domain-https/domain.png)
 
    *Paste the 4 NS values into **Manage Nameservers** on Name.com and save changes.*
 
