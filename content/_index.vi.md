@@ -17,7 +17,7 @@ chapter: false
 
 &emsp; **Ngành:** Trí Tuệ Nhân Tạo
 
-&emsp; **Lớp:** SE192276
+&emsp; **MSSV:** SE192276
 
 &emsp; **Công ty thực tập:**  Bootcamp - First Cloud AI Journey @ AWS Study Group
 
