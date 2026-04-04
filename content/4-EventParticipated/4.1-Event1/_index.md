@@ -8,7 +8,7 @@ pre: " <b> 4.1. </b> "
 
 # Reflection Report: “Cloud Mastery Series #1: AI From Scratch”
 
-![Cloud Mastery 2026 #1](event1-banner.png)
+![Cloud Mastery 2026 #1](/images/4-EventParticipated/event1-banner.png)
 
 ### Event Information
 
@@ -65,4 +65,3 @@ pre: " <b> 4.1. </b> "
 ### Event Experience
 
 The workshop combined clear theory with practical demos and real project examples. I had the chance to connect concepts (prompt design, tool-using agents, and AIoT) into a coherent end-to-end picture and identify concrete ways to apply them to my ongoing project work.
-

@@ -8,7 +8,7 @@ pre: " <b> 4.1. </b> "
 
 # Bài thu hoạch “Cloud Mastery Series #1: AI From Scratch”
 
-![Cloud Mastery 2026 #1](event1-banner.png)
+![Cloud Mastery 2026 #1](/images/4-EventParticipated/event1-banner.png)
 
 ### Mục tiêu sự kiện
 
