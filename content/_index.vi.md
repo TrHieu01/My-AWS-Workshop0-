@@ -1,0 +1,39 @@
+---
+title: "Báo cáo thực tập"
+date: 2024-01-01
+weight: 1
+chapter: false
+---
+
+# Báo cáo thực tập
+### Thông tin sinh viên:
+&emsp; **Họ và tên:** Nguyễn Trung Hiếu
+
+&emsp; **Số điện thoại:** 0362930809
+
+&emsp; **Email:** hieuanthanh99@gmail.com
+
+&emsp; **Trường:** Đại Học FPT
+
+&emsp; **Ngành:** Trí Tuệ Nhân Tạo
+
+&emsp; **Lớp:** AWS Boot Camp Spring 2026
+
+&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
+
+&emsp; **Vị trí thực tập:** Boot Camp FCJ AI 
+
+&emsp; **Thời gian thực tập:** Từ ngày 5/01/2026  đến ngày 18/4/2026
+
+![Ảnh đại diện của bạn](/images/avatar.png?v=20260404)
+
+
+
+### Nội dung báo cáo
+
+1.  [Worklog](1-Worklog/)
+2.  [Proposal](2-Proposal/)
+3.  [Các events đã tham gia](4-EventParticipated/)
+4.  [Workshop](5-Workshop/)
+5.  [Tự đánh giá](6-Self-evaluation/)
+6.  [Chia sẻ, đóng góp ý kiến](7-Feedback/)

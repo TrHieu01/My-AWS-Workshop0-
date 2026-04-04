@@ -1,0 +1,12 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+{{- $kind := .Get 0 | default "" -}}
+{{- if ne $kind "warning" -}}
+<div
+  class="notices {{ $kind }}"
+  {{- if (len .Params | eq 2) -}}
+  id="{{ .Get 1 }}"
+  {{- end -}}
+>
+  {{ .Inner }}
+</div>
+{{- end -}}
