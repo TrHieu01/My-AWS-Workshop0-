@@ -19,17 +19,17 @@ EduTrust is an online exam management platform designed for educational environm
 
 ### 2. Problem Statement
 ### Current Problems
-Online exams face multiple challenges: manual proctoring is laborâ€‘intensive, cheating is difficult to detect (phones, multiple faces in frame, leaving the camera), there is no centralized system to manage classes â€” exams â€” results, and students lack intelligent learning support tools.
+Online exams face multiple challenges: manual proctoring is labora intensive, cheating is difficult to detect (phones, multiple faces in frame, leaving the camera), there is no centralized system to manage classes  exams results, and students lack intelligent learning support tools.
 
 ### The Solution
 EduTrust provides a comprehensive platform including:
-- **Class & Exam Management**: Admin creates classes, assigns homeroom/subject teachers; teachers create multipleâ€‘choice exams with secret keys and start/end times.
+- **Class & Exam Management**: Admin creates classes, assigns homeroom/subject teachers; teachers create multiple choice exams with secret keys and start/end times.
 - **AI Proctoring**: Integrates YOLOv26n to detect violations in real time (MULTIPLE_FACES, FACE_DISAPPEARED, FORBIDDEN_OBJECT). Evidence images are stored in Amazon S3 and logged in MongoDB.
-- **AI Learning Assistant**: Multiâ€‘agent system (Pydantic AI) helps students search knowledge, ask questions, and find learning materials.
-- **Authentication & Security**: JWT (via Cognito) with roleâ€‘based access control (RBAC).
+- **AI Learning Assistant**: Multi agent system (Pydantic AI) helps students search knowledge, ask questions, and find learning materials.
+- **Authentication & Security**: JWT (via Cognito) with role based access control (RBAC).
 
 ### Benefits and ROI
-The solution reduces teachersâ€™ manual workload, improves transparency and fairness, and automates grading with evidence stored in S3. Operational cost stays low by leveraging MongoDB Atlas (free tier), Redis Cloud, and AWS S3/Amplify. Estimated AWS cost is under 5 USD/month for a midâ€‘size school.
+The solution reduces teachers manual workload, improves transparency and fairness, and automates grading with evidence stored in S3. Operational cost stays low by leveraging MongoDB Atlas (free tier), Redis Cloud, and AWS S3/Amplify. Estimated AWS cost is under 5 USD/month for a midâ€‘size school.
 
 ### 3. Solution Architecture
 EduTrust applies a **fullstack monorepo** architecture with a Python FastAPI backend and a Next.js frontend, deployed via Docker. Data is stored in MongoDB (users, exams, classes, submissions, violations), session/conversation cache uses Redis, and violation images are stored in Amazon S3. The architecture is shown below:
