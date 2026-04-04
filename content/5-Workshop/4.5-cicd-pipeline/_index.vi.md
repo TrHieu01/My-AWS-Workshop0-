@@ -22,7 +22,7 @@ Pipeline được kích hoạt khi có thay đổi được merge vào nhánh ma
 **CD (Continuous Delivery/Deployment):** phần quan trọng nhất, gồm 4 job chạy theo thứ tự phụ thuộc để đảm bảo hạ tầng và artifact luôn đồng bộ.
 </div>
 
-![Quy trình CI/CD](cicd-image.png)
+![Quy trình CI/CD](content\5-Workshop\4.5-cicd-pipeline\cicd-image.png)
 
 - **Job Packer:** build image backend đã đóng gói sẵn ứng dụng và phụ thuộc.
 - **Job Terraform:** cập nhật hạ tầng theo Terraform (tạo mới, thay đổi hoặc huỷ theo plan).
