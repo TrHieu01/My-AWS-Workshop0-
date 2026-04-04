@@ -17,7 +17,7 @@ chapter: false
 
 &emsp; **Ngành:** Trí Tuệ Nhân Tạo
 
-&emsp; **Lớp:** AWS Boot Camp Spring 2026
+&emsp; **Lớp:** SE192276
 
 &emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
 

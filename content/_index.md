@@ -23,7 +23,7 @@ chapter: false
 
 &emsp; **Major:** Artificial Intelligence
 
-&emsp; **Class:** AWS Boot Camp Spring 2026
+&emsp; **Class:** SE192276
 
 &emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
 
