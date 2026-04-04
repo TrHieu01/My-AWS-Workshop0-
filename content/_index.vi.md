@@ -19,9 +19,9 @@ chapter: false
 
 &emsp; **Lớp:** SE192276
 
-&emsp; **Công ty thực tập:** Công ty TNHH Amazon Web Services Vietnam
+&emsp; **Công ty thực tập:**  Bootcamp - First Cloud AI Journey @ AWS Study Group
 
-&emsp; **Vị trí thực tập:** Boot Camp FCJ AI 
+&emsp; **Vị trí thực tập:** FCAJ AI Cloud Intern
 
 &emsp; **Thời gian thực tập:** Từ ngày 5/01/2026  đến ngày 18/4/2026
 

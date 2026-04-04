@@ -25,9 +25,9 @@ chapter: false
 
 &emsp; **Class:** SE192276
 
-&emsp; **Internship Company:** Amazon Web Services Vietnam Co., Ltd.
+&emsp; **Internship Company:**  Bootcamp - First Cloud AI Journey @ AWS Study Group
 
-&emsp; **Internship Position:** FCJ AI Boot Camp
+&emsp; **Internship Position:** FCAJ AI Cloud Intern
 
 &emsp; **Internship Duration:** From 5/01/2026 to 18/4/2026
 
