@@ -22,7 +22,7 @@ The pipeline is triggered when changes are merged into the main branch or when r
 **CD (Continuous Delivery/Deployment):** the most important phase, consisting of 4 jobs executed in dependency order to keep infrastructure and artifacts synchronized.
 </div>
 
-![CI/CD Workflow](cicd-image.png)
+![CI/CD Workflow](/images/5-Workshop/4.5-cicd-pipeline/cicd-image.png)
 
 - **Job Packer:** Builds a backend image with the application and dependencies pre-packaged.
 - **Job Terraform:** Updates infrastructure according to Terraform (creating, changing, or destroying based on the plan).
