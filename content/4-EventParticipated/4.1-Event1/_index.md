@@ -6,65 +6,63 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Bài thu hoạch “Cloud Mastery Series #1: AI From Scratch”
+# Reflection Report: “Cloud Mastery Series #1: AI From Scratch”
 
 ![Cloud Mastery 2026 #1](event1-banner.png)
 
-### Mục tiêu sự kiện
+### Event Information
 
-- Khám phá các ứng dụng thực tế của Trí tuệ nhân tạo tạo sinh (GenAI) trong phát triển dự án.  
-- Giới thiệu về nghệ thuật giao tiếp với AI thông qua Prompt Engineering chuyên sâu.  
-- Hướng dẫn xây dựng các AI Agent tự vận hành và tích hợp công cụ (Tool Use).  
-- Demo các dự án kết hợp AI và IoT (AIoT) ứng dụng trong đời sống thực tế.  
+- **Event Name:** Cloud Mastery Series #1: AI From Scratch
+- **Date & Time:** 09:00 – 12:00, March 14, 2026
+- **Location:** 26th Floor, Bitexco Financial Tower, 02 Hai Trieu Street, District 1, Ho Chi Minh City
+- **Role:** Attendee
 
-### Diễn giả
+### Event Objectives
 
-- Anh Dinh Le Hoang (Aiden Dinh) – AI Engineer.  
-- Vinh Banh Cam – Data Engineer.  
-- Thinh Nguyen Tuan – DevOps Engineer.  
+- Explore real-world applications of Generative AI (GenAI) in project development.
+- Learn advanced Prompt Engineering techniques for better AI outcomes.
+- Learn how to build autonomous AI Agents and integrate tools (Tool Use).
+- See practical demos combining AI and IoT (AIoT) for real-life use cases.
 
-### Điểm nổi bật
+### Speakers
 
-#### Kỹ thuật Prompt Engineering nâng cao
+- Dinh Le Hoang (Aiden Dinh) — AI Engineer
+- Vinh Banh Cam — Data Engineer
+- Thinh Nguyen Tuan — DevOps Engineer
 
-- Nhận diện vấn đề của prompt sơ sài: gây lãng phí token, kết quả không nhất quán và giảm năng suất.  
-- Các thành phần của một Prompt chuyên nghiệp: Vai trò (Role), Chỉ dẫn (Instruction), Bối cảnh (Context), Dữ liệu đầu vào (Input), Định dạng đầu ra (Output), Ví dụ (Few-shot) và Ràng buộc (Constraints).  
-- Kỹ thuật tối ưu: Chain-of-Thought (CoT), Self-Consistency, Tree-of-Thoughts (ToT) và RAG.  
+### Key Highlights
 
-#### Xây dựng AI Agent với Strands
+#### Advanced Prompt Engineering
 
-- Khắc phục giới hạn của LLM truyền thống bằng cách kết nối với thế giới thực qua các công cụ (APIs, Database).  
-- Quy trình vận hành của Strands Agents: Lập kế hoạch đa bước, tích hợp công cụ và ra quyết định tự chủ (Autonomous behavior).  
+- Common issues with weak prompts: token waste, inconsistent results, and reduced productivity.
+- A professional prompt structure: **Role**, **Instruction**, **Context**, **Input**, **Output format**, **Few-shot examples**, and **Constraints**.
+- Optimization techniques: Chain-of-Thought (CoT), Self-Consistency, Tree-of-Thoughts (ToT), and Retrieval-Augmented Generation (RAG).
 
-#### Giải pháp AIoT thực tế - Hệ thống Quản lý Locker
+#### Building AI Agents with Strands
 
-- Kết hợp phần cứng (Raspberry Pi, Arduino, cảm biến) với dịch vụ đám mây AWS.  
-- Ứng dụng AWS Rekognition để nhận diện khuôn mặt thành viên khi mượn đồ.  
-- Lưu trữ dữ liệu trên S3, DynamoDB và xử lý logic qua Lambda.  
+- Extending LLM capabilities by connecting agents to real-world tools (APIs, databases).
+- Agent workflow: multi-step planning, tool integration, and autonomous decision-making.
 
-### Kết quả rút ra
+#### Practical AIoT Solution — Locker Management System
 
-- Tư duy AI-First: Luôn xác định rõ vai trò và ngữ cảnh cho AI để nhận được kết quả chất lượng nhất thay vì các câu lệnh chung chung.  
-- Kiến trúc Agentic: Hiểu rõ tầm quan trọng của việc để AI "tự suy nghĩ" và sử dụng công cụ thay vì chỉ trả lời văn bản đơn thuần.  
-- Tích hợp hệ thống: Cách kết nối giữa phần cứng IoT và các dịch vụ AI Cloud để giải quyết các bài toán vận hành thủ công.  
-- Ứng dụng thực tế: Tận dụng Amazon Q Developer và các công cụ tối ưu prompt (Proptimizer) để tăng hiệu suất lập trình.  
+- Integrating hardware (Raspberry Pi, Arduino, sensors) with AWS cloud services.
+- Using AWS Rekognition for member face recognition during item pickup/return.
+- Storing data in Amazon S3 and DynamoDB, with business logic handled by AWS Lambda.
 
-### Ứng dụng vào công việc
+### Key Takeaways
 
-- Tối ưu dự án EduTrust: Áp dụng kỹ thuật Prompt Engineering để xây dựng tính năng gợi ý học tập cá nhân hóa chính xác hơn.  
-- Triển khai AI Agent: Thử nghiệm tích hợp Strands Agents vào hệ thống để tự động hóa các quy trình phản hồi người dùng.  
-- Tối ưu quy trình code: Sử dụng các nguyên tắc "Be Clear & Specific" và "Use Delimiters" khi làm việc với AI hỗ trợ viết mã nguồn.  
+- **AI-first mindset:** define roles and context clearly to get high-quality results instead of generic answers.
+- **Agentic architecture:** enable AI to “think” and use tools instead of only generating text.
+- **System integration:** connect IoT hardware and cloud AI services to reduce manual operational work.
+- **Practical usage:** leverage Amazon Q Developer and prompt-optimization tools (e.g., “Proptimizer”) to improve coding efficiency.
 
-### Trải nghiệm sự kiện
+### How I Apply This to My Work
 
-Buổi workshop “Cloud Mastery 2026 #1: AI From Scratch” mang lại trải nghiệm học thuật thực chiến đầy giá trị:  
+- Improve EduTrust: use Prompt Engineering techniques to build more accurate and personalized learning suggestions.
+- Experiment with AI agents: evaluate Strands-style agents to automate user support workflows.
+- Work more effectively with AI: apply “Be Clear & Specific” and “Use Delimiters” when using AI for coding assistance.
 
-- Học từ các kỹ sư giàu kinh nghiệm: Được nghe chia sẻ trực tiếp từ các AI, Data và DevOps Engineer về cách họ triển khai AI trong môi trường doanh nghiệp.  
-- Trải nghiệm Demo sống động: Việc xem trực tiếp hệ thống Locker thông minh và ứng dụng quản lý ngân sách Plutus giúp tôi hình dung rõ nét về luồng dữ liệu giữa Cloud và thiết bị.  
-- Tiếp cận công nghệ mới: Khám phá giải pháp Proptimizer (trình duyệt mở rộng) giúp tối ưu hóa prompt ngay trên giao diện web.  
+### Event Experience
 
-### Bài học rút ra
+The workshop combined clear theory with practical demos and real project examples. I had the chance to connect concepts (prompt design, tool-using agents, and AIoT) into a coherent end-to-end picture and identify concrete ways to apply them to my ongoing project work.
 
-- Hiểu rằng Prompt Engineering không chỉ là "đặt câu hỏi" mà là một môn nghệ thuật giao tiếp có cấu trúc để tiết kiệm chi phí và thời gian.  
-- AI Agent là tương lai của ứng dụng thông minh nhờ khả năng tự thực hiện các luồng công việc phức tạp thay vì chỉ phản hồi tĩnh.  
-- Sự kết hợp giữa AI và IoT mở ra khả năng tự động hóa vô hạn cho các dịch vụ truyền thống.  

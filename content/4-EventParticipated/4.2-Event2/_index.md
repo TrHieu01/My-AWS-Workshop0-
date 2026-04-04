@@ -6,72 +6,80 @@ chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# Bài thu hoạch “Cloud Mastery Series #2: DevOps Fundamentals & Infrastructure”
+# Reflection Report: “Cloud Mastery Series #2: DevOps Fundamentals & Infrastructure”
 
-### Mục tiêu sự kiện
+### Event Information
 
-- Hệ thống hóa kiến thức về IaC: Cung cấp cái nhìn toàn diện về Infrastructure as Code và cách triển khai thực tế với Terraform trên AWS.  
-- Làm chủ điều phối Container: Giới thiệu kiến trúc Kubernetes (K8s) và cách quản lý ứng dụng hiện đại trên môi trường Cloud-native.  
-- Tối ưu hóa vận hành với Elixir: Khám phá giải pháp Elixir/Erlang như một công cụ thống nhất cho hệ thống DevOps có độ sẵn sàng cao và khả năng chịu lỗi.  
-- Thực hành thực tế (Hands-on): Trình diễn các kỹ thuật triển khai hạ tầng và ứng dụng thông qua Demo trực tiếp.  
+- **Event Name:** Cloud Mastery Series #2: DevOps Fundamentals & Infrastructure
+- **Date & Time:** 09:00 – 12:00, April 04, 2026
+- **Location:** FPTU — Hall Academic A
+- **Role:** Attendee
 
-### Diễn giả
+### Event Objectives
 
-- Thinh Nguyễn – FCAJ Cloud Engineer Trainee (Chuyên gia về IaC & Terraform).  
-- Bảo Huỳnh – Junior Cloud Native Developer tại Endava / Founder ITea Lab (Chuyên gia Kubernetes).  
-- Nguyễn Tạ Minh Triết – R&D Member tại ITea Lab / SAP Developer Intern tại Bosch GSV (Chuyên gia Elixir).  
+- Build a structured understanding of Infrastructure as Code (IaC) and hands-on Terraform on AWS.
+- Understand Kubernetes (K8s) architecture and how to manage modern applications in a cloud-native environment.
+- Explore Elixir/Erlang as a tool for highly available and fault-tolerant DevOps systems.
+- Learn through live demos and practical implementation techniques.
 
-### Điểm nổi bật
+### Speakers
 
-#### Infrastructure as Code (IaC) với Terraform
+- Thinh Nguyen — FCAJ Cloud Engineer Trainee (IaC & Terraform)
+- Bao Huynh — Junior Cloud Native Developer at Endava / Founder of ITea Lab (Kubernetes)
+- Nguyen Ta Minh Triet — R&D Member at ITea Lab / SAP Developer Intern at Bosch GSV (Elixir)
 
-- Phân tích sự dịch chuyển từ "ClickOps" sang tự động hóa hạ tầng để tránh sai sót con người và tăng tính nhất quán.  
-- So sánh AWS CloudFormation, AWS CDK và Terraform (HCL).  
-- Quy trình quản lý State file và các lệnh thực thi cốt lõi (plan, apply, destroy).  
+### Key Highlights
+
+#### Infrastructure as Code (IaC) with Terraform
+
+- The shift from “ClickOps” to IaC to reduce human error and improve consistency.
+- Comparison of AWS CloudFormation, AWS CDK, and Terraform (HCL).
+- State management and core commands: `plan`, `apply`, `destroy`.
 
 #### Kubernetes (K8s) Architecture
 
-- Giải quyết thách thức quản lý hàng ngàn container: tự phục hồi (self-healing) và tự động mở rộng (auto-scaling).  
-- Đi sâu vào các thành phần: Control Plane, Worker Nodes, Pods, Deployments và Services.  
-- Giới thiệu công cụ hỗ trợ: Helm (quản lý package) và K9s (giao diện terminal trực quan).  
+- Managing at scale with self-healing and auto-scaling.
+- Core components: Control Plane, Worker Nodes, Pods, Deployments, and Services.
+- Supporting tools: Helm (package management) and K9s (terminal UI for cluster ops).
 
-#### Elixir in DevOps Pipeline
+#### Elixir in the DevOps Pipeline
 
-- Sức mạnh của máy ảo BEAM trong việc xử lý hàng triệu kết nối đồng thời với chi phí cực thấp.  
-- Triết lý "Let it crash": Sử dụng Supervision Trees để hệ thống tự phục hồi mà không cần can thiệp thủ công.  
-- Case study: Chuyển đổi từ Serverless (Node.js/Lambda) sang Elixir giúp giảm chi phí từ $30,000/tháng xuống còn dưới $400/tháng.  
+- BEAM VM strengths: handling massive concurrency at low cost.
+- “Let it crash” philosophy using supervision trees for self-recovery without manual intervention.
+- Case study: migrating from Serverless (Node.js/Lambda) to Elixir to reduce costs drastically.
 
-### Kết quả rút ra
+### Key Takeaways
 
-- Tư duy tự động hóa: Hạ tầng không còn là các server đơn lẻ mà là các dòng code có thể phiên bản hóa (versioning) và tái sử dụng.  
-- Quản lý Cluster hiệu quả: Hiểu rõ Amazon EKS là giải pháp tối ưu cho doanh nghiệp để giảm bớt gánh nặng quản lý Control Plane của Kubernetes.  
-- Khả năng chịu lỗi (Fault-Tolerance): Việc thiết kế hệ thống có khả năng tự phục hồi (như trong Elixir) quan trọng hơn việc cố gắng viết code không bao giờ lỗi.  
-- Tối ưu hóa chi phí (Cost Optimization): Lựa chọn đúng công nghệ (như Elixir cho các task tính toán song song) có thể mang lại hiệu quả ROI vượt trội so với các mô hình truyền thống.  
+- **Automation mindset:** infrastructure becomes versioned, reusable code.
+- **Efficient cluster operations:** understanding why managed Kubernetes (e.g., EKS) helps reduce control-plane overhead.
+- **Fault tolerance matters:** designing for recovery is more important than trying to write “never failing” code.
+- **Cost optimization:** selecting the right tech (e.g., Elixir for concurrent workloads) can yield better ROI than traditional approaches.
 
-### Ứng dụng vào công việc
+### How I Apply This to My Work
 
-- Định hướng dự án EduTrust: Sử dụng Terraform để thiết lập hạ tầng AWS một cách chuẩn hóa, giúp dễ dàng sao chép môi trường (Dev/Staging/Prod).  
-- Triển khai ứng dụng: Cân nhắc đóng gói các microservices của EduTrust vào Docker và điều phối bằng Kubernetes để đảm bảo tính sẵn sàng cao.  
-- Cải thiện hiệu suất: Tìm hiểu sâu hơn về kiến trúc hướng sự kiện (Event-driven) thông qua cách Elixir xử lý tiến trình để áp dụng vào các tính năng cần xử lý thời gian thực.  
+- Standardize EduTrust infrastructure with Terraform to replicate environments (Dev/Staging/Prod).
+- Consider containerizing EduTrust services with Docker and orchestrating with Kubernetes for higher availability.
+- Learn more about event-driven patterns and resilient architectures and apply them to real-time features.
 
-### Trải nghiệm sự kiện
+### Event Experience
 
-Chuỗi workshop mang lại một hành trình từ hạ tầng đến ứng dụng rất logic:  
+The workshop delivered a logical learning journey from infrastructure to platform operations:
 
-- Nội dung chuyên sâu: Không chỉ dừng lại ở lý thuyết, các phiên Demo về Terraform và K9s giúp hình dung rõ cách vận hành thực tế của một kỹ sư Cloud.  
-- Góc nhìn đa chiều: Sự kết hợp giữa công nghệ phổ biến (AWS, K8s) và công nghệ đặc thù hiệu suất cao (Elixir) giúp mở rộng tư duy chọn lựa giải pháp.  
-- Sự kết nối: Cơ hội trao đổi với các diễn giả có kinh nghiệm thực chiến từ các tập đoàn lớn như Endava và Bosch.  
+- Practical, hands-on demos (Terraform and K9s) that made the concepts concrete.
+- Exposure to multiple perspectives, combining mainstream tools (AWS, Kubernetes) with high-performance approaches (Elixir).
+- Valuable networking and discussions with speakers with real industry experience.
 
-### Bài học rút ra
+### Lessons Learned
 
-- Hiện đại hóa hạ tầng bắt buộc phải đi kèm với IaC để đảm bảo tốc độ và an toàn.  
-- Kubernetes là "hệ điều hành" của đám mây, nhưng cần các công cụ bổ trợ như Helm và K9s để quản trị hiệu quả.  
-- Đừng ngại thử nghiệm các ngôn ngữ/nền tảng mới (như Elixir) nếu chúng giải quyết được bài toán về chi phí và độ tin cậy tốt hơn các giải pháp phổ thông.  
+- Modern infrastructure should be paired with IaC to ensure speed and safety.
+- Kubernetes is powerful, but tools like Helm and K9s are essential for effective day-to-day operations.
+- Be open to new languages/platforms (such as Elixir) when they solve reliability and cost problems better.
 
-### Một số hình ảnh tham gia sự kiện
+### Event Photos
 
-(Chưa có ảnh sự kiện)
+(No photos available yet.)
 
-### Tổng kết
+### Conclusion
 
-Chuỗi sự kiện đã cung cấp một bộ khung kiến thức vững chắc về DevOps hiện đại. Đây là nền tảng quan trọng để tôi áp dụng vào việc xây dựng và vận hành dự án EduTrust một cách chuyên nghiệp, sẵn sàng cho các bài toán quy mô lớn trên Cloud.
+Cloud Mastery Series #2 provided a strong foundation in modern DevOps: IaC, Kubernetes operations, and reliability/cost tradeoffs. These lessons are directly applicable to building and operating EduTrust more professionally and at larger scale.
+
