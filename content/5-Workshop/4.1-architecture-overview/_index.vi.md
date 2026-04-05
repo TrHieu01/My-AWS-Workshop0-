@@ -1,107 +1,107 @@
 ---
-title : "Tá»•ng quan kiáº¿n trÃºc"
-date : 2024-01-01 
+title : "Tổng quan kiến trúc"
+date : 2024-01-01
 weight : 1
 chapter : false
 pre : " <b> 4.1. </b> "
 ---
 
-#### Giá»›i thiá»‡u
+#### Giới thiệu
 
-EduTrust lÃ  há»‡ thá»‘ng há»— trá»£ há»c táº­p vÃ  giÃ¡m sÃ¡t thi báº±ng AI Camera, Ä‘Æ°á»£c triá»ƒn khai trÃªn AWS Ä‘á»ƒ Ä‘áº£m báº£o má»Ÿ rá»™ng, báº£o máº­t vÃ  váº­n hÃ nh á»•n Ä‘á»‹nh. Workshop nÃ y táº­p trung vÃ o setup kiáº¿n trÃºc vÃ  luá»“ng triá»ƒn khai chuáº©n cho nhÃ³m.
+EduTrust là hệ thống hỗ trợ học tập và giám sát thi bằng AI Camera, được triển khai trên AWS để đảm bảo khả năng mở rộng, bảo mật và vận hành ổn định. Workshop này tập trung vào việc thiết lập kiến trúc và luồng triển khai chuẩn cho nhóm.
 
-#### Kiáº¿n trÃºc AWS tá»•ng quan
+#### Kiến trúc AWS tổng quan
 
-Internet â†’ Amplify â†’ Application Load Balancer â†’ EC2 Auto Scaling â†’ Backend services
+Internet → Amplify → Application Load Balancer → EC2 Auto Scaling → Backend services
 
-![Kiáº¿n trÃºc EduTrust](/images/2-Proposal/edutrust-architect.png)
+![Kiến trúc EduTrust](/images/2-Proposal/edutrust-architect.png)
 
-#### ThÃ nh pháº§n chÃ­nh (theo layer)
+#### Thành phần chính (theo lớp)
 
 **Client/Presentation Layer**
 
-+ **Amplify**: host frontend vÃ  káº¿t ná»‘i custom domain.
++ **Amplify**: host frontend và kết nối custom domain.
 
 **Traffic/Delivery Layer**
 
-+ **Application Load Balancer**: phÃ¢n phá»‘i request vÃ o backend.
++ **Application Load Balancer**: phân phối request vào backend.
 
 **Compute/Service Layer**
 
-+ **EC2 Auto Scaling**: cháº¡y cÃ¡c backend services theo táº£i.
-+ **Backend services**: API, xá»­ lÃ½ AI, camera events, auth.
++ **EC2 Auto Scaling**: chạy các backend services theo tải.
++ **Backend services**: API, xử lý AI, camera events, authentication.
 
 **Data Layer**
 
-+ **Data**: lÆ°u trá»¯ log, video, vÃ  káº¿t quáº£ bÃ i thi (S3/DB).
++ **Data**: lưu trữ log, video và kết quả bài thi (S3/DB).
 
-#### Danh sÃ¡ch dá»‹ch vá»¥ sá»­ dá»¥ng
+#### Danh sách dịch vụ sử dụng
 
-**Lá»›p giao diá»‡n & biÃªn (Frontend & Edge)**
+**Lớp giao diện & biên (Frontend & Edge)**
 
 + AWS Amplify
 + AWS WAF
 + AWS Route 53
 + AWS ACM
 
-**Lá»›p Ä‘á»‹nh danh (Identity)**
+**Lớp định danh (Identity)**
 
 + Amazon Cognito
 
-**Lá»›p máº¡ng (Networking)**
+**Lớp mạng (Networking)**
 
 + Amazon VPC (public/private subnets)
 + Internet Gateway
 + NAT Gateway
 + Application Load Balancer
 
-**Lá»›p tÃ­nh toÃ¡n & container (Compute & Container)**
+**Lớp tính toán & container (Compute & Container)**
 
 + Amazon EC2
 + EC2 Auto Scaling
 + Amazon ECR
 
-**Lá»›p dá»¯ liá»‡u & lÆ°u trá»¯ (Data & Storage)**
+**Lớp dữ liệu & lưu trữ (Data & Storage)**
 
 + Amazon S3 (frontend assets, logs, Terraform state)
 + Amazon RDS
 + Amazon ElastiCache for Redis
 
-**Lá»›p quan sÃ¡t & giÃ¡m sÃ¡t (Observability)**
+**Lớp quan sát & giám sát (Observability)**
 
 + Amazon CloudWatch
 + VPC Flow Logs
 + Amazon SNS
 
-**Lá»›p báº£o máº­t & cáº¥u hÃ¬nh (Security & Configuration)**
+**Lớp bảo mật & cấu hình (Security & Configuration)**
 
 + AWS KMS
 + AWS Systems Manager Parameter Store
 + AWS PrivateLink
 
-**Lá»›p tá»± Ä‘á»™ng hoÃ¡ triá»ƒn khai & IaC (CI/CD & IaC)**
+**Lớp tự động hoá triển khai & IaC (CI/CD & IaC)**
 
 + GitHub Actions
 + Packer
 + Terraform
 
-#### TÃ­nh sáºµn sÃ ng cao (HA) vÃ  Multi-AZ
+#### Tính sẵn sàng cao (HA) và Multi-AZ
 
-+ EC2 Auto Scaling cháº¡y trÃªn nhiá»u AZ Ä‘á»ƒ Ä‘áº£m báº£o HA.
-+ Application Load Balancer tá»± Ä‘á»™ng phÃ¢n phá»‘i lÆ°u lÆ°á»£ng giá»¯a cÃ¡c AZ.
-+ Dá»¯ liá»‡u quan trá»ng lÆ°u trÃªn dá»‹ch vá»¥ managed (RDS/S3) Ä‘á»ƒ tÄƒng Ä‘á»™ bá»n.
++ EC2 Auto Scaling chạy trên nhiều Availability Zone (AZ) để đảm bảo HA.
++ Application Load Balancer tự động phân phối lưu lượng giữa các AZ.
++ Dữ liệu quan trọng lưu trên dịch vụ managed (RDS/S3) để tăng độ bền.
 
-#### Tá»•ng quan kiáº¿n trÃºc vÃ  nhiá»‡m vá»¥
+#### Tổng quan kiến trúc và nhiệm vụ
 
-+ **Amplify**: phá»¥c vá»¥ giao diá»‡n ngÆ°á»i dÃ¹ng, káº¿t ná»‘i domain vÃ  HTTPS.
-+ **Application Load Balancer**: lÃ m lá»›p Ä‘iá»u phá»‘i, Ä‘á»‹nh tuyáº¿n request tá»›i backend.
-+ **EC2 Auto Scaling**: Ä‘áº£m báº£o backend tá»± má»Ÿ rá»™ng khi táº£i tÄƒng.
-+ **Backend services**: xá»­ lÃ½ nghiá»‡p vá»¥, AI, camera, auth.
-+ **Data layer**: lÆ°u trá»¯ dá»¯ liá»‡u thi, log, video vÃ  káº¿t quáº£.
++ **Amplify**: phục vụ giao diện người dùng, kết nối domain và HTTPS.
++ **Application Load Balancer**: lớp điều phối, định tuyến request tới backend.
++ **EC2 Auto Scaling**: đảm bảo backend tự mở rộng khi tải tăng.
++ **Backend services**: xử lý nghiệp vụ, AI, camera events và authentication.
++ **Data layer**: lưu trữ dữ liệu thi, log, video và kết quả.
 
-#### Luá»“ng chÃ­nh trong workshop
+#### Luồng chính trong workshop
 
-1. NgÆ°á»i dÃ¹ng truy cáº­p frontend qua Amplify.
-2. Frontend gá»i API qua Application Load Balancer.
-3. Backend xá»­ lÃ½ logic, gá»i AI vÃ  nháº­n sá»± kiá»‡n tá»« camera.
-4. Dá»¯ liá»‡u Ä‘Æ°á»£c lÆ°u trá»¯ vÃ  hiá»ƒn thá»‹ láº¡i cho ngÆ°á»i dÃ¹ng.
+1. Người dùng truy cập frontend qua Amplify.
+2. Frontend gọi API qua Application Load Balancer.
+3. Backend xử lý logic, gọi AI và nhận sự kiện từ camera.
+4. Dữ liệu được lưu trữ và hiển thị lại cho người dùng.
