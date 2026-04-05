@@ -1,9 +1,9 @@
 ---
 title: "Event 2"
 date: 2024-01-01
-weight: 1
+weight: 2
 chapter: false
-pre: " <b> 4.2. </b> "
+pre: " <b> 3.2. </b> "
 ---
 
 # Reflection Report: “Cloud Mastery Series #2: DevOps Fundamentals & Infrastructure”
@@ -82,4 +82,3 @@ The workshop delivered a logical learning journey from infrastructure to platfor
 ### Conclusion
 
 Cloud Mastery Series #2 provided a strong foundation in modern DevOps: IaC, Kubernetes operations, and reliability/cost tradeoffs. These lessons are directly applicable to building and operating EduTrust more professionally and at larger scale.
-

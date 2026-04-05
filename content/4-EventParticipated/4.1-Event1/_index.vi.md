@@ -3,7 +3,7 @@ title: "Event 1"
 date: 2024-01-01
 weight: 1
 chapter: false
-pre: " <b> 4.1. </b> "
+pre: " <b> 3.1. </b> "
 ---
 
 # Bài thu hoạch “Cloud Mastery Series #1: AI From Scratch”
