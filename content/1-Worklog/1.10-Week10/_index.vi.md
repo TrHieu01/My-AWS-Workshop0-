@@ -22,8 +22,7 @@ pre: " <b> 1.10. </b> "
 | 4 | 11/03 | Thiết lập quy trình sao lưu (Backup) tự động cho MongoDB Atlas. |
 | 5 | 12/03 | Kiểm tra bảo mật S3 Bucket, đảm bảo chỉ truy cập qua Presigned URL. |
 | 6 | 13/03 | Thực hiện Stress Test giả lập nhiều học sinh cùng thi một lúc. |
-| 7 | 14/03 | Hoàn thiện tài liệu hướng dẫn vận hành và quản trị hệ thống. |
-| CN | 15/03 | Kiểm tra tính ổn định của Docker containers trên môi trường AWS. |
+
 
 ### Kết quả đạt được tuần 10:
 * Hệ thống được giám sát chặt chẽ, sẵn sàng ứng phó với các sự cố kỹ thuật.

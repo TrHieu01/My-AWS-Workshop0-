@@ -22,8 +22,7 @@ pre: " <b> 1.10. </b> "
 | Wed | 11/03 | Set up automated Backup processes for MongoDB Atlas. |
 | Thu | 12/03 | Verified S3 Bucket security, ensuring access only via Presigned URLs. |
 | Fri | 13/03 | Conducted Stress Tests simulating multiple concurrent users during an exam. |
-| Sat | 14/03 | Finalized system operation and administration manuals. |
-| Sun | 15/03 | Verified Docker container stability in the AWS production environment. |
+
 
 ### Week 10 Achievements:
 * System is closely monitored, ready for incident response.
