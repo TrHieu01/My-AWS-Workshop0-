@@ -12,7 +12,7 @@ EduTrust is an AI Camera-based learning support and exam supervision system depl
 
 #### AWS Architecture Overview
 
-Internet -> Amplify -> Application Load Balancer -> EC2 Auto Scaling  Backend services
+Internet → Amplify → Application Load Balancer → EC2 Auto Scaling → Backend services
 
 ![EduTrust architecture](/images/2-Proposal/edutrust-architect.png)
 
