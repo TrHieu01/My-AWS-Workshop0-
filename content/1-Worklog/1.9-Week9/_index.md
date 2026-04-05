@@ -10,7 +10,7 @@ pre: " <b> 1.9. </b> "
 {{% /notice %}}
 
 ### Week 9 Objectives:
-* Deploy Retrieval-Augmented Generation (RAG) for the AI system.
+* Search and research Retrieval-Augmented Generation for the AI system.
 * Build an intelligent Chatbot interface using Pydantic AI.
 * Optimize AI accuracy based on the project's knowledge base.
 
@@ -22,8 +22,8 @@ pre: " <b> 1.9. </b> "
 | Wed | 04/03 | Integrated Multi-agent AI system for specialized responses. |
 | Thu | 05/03 | Developed Next.js Chatbot interface with Markdown support. |
 | Fri | 06/03 | Optimized Prompt Engineering to enhance response quality. |
-| Sat | 07/03 | Tested Chatbot features across both Web and Mobile views. |
-| Sun | 08/03 | Evaluated Chatbot performance with the development team. |
+| Sat | 07/03 | Tested Chatbot features across both Web views. |
+
 
 ### Week 9 Achievements:
 * Intelligent Chatbot successfully answers questions based on lecture content.

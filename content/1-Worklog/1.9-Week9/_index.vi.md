@@ -10,7 +10,7 @@ pre: " <b> 1.9. </b> "
 {{% /notice %}}
 
 ### Mục tiêu tuần 9:
-* Triển khai cơ chế RAG (Retrieval-Augmented Generation) cho hệ thống AI.
+* Tìm hiểu và nghiên cứu cơ chế RAG (Retrieval-Augmented Generation) cho hệ thống AI.
 * Xây dựng giao diện Chatbot thông minh hỗ trợ học tập qua Pydantic AI.
 * Tối ưu hóa độ chính xác của AI dựa trên cơ sở tri thức bài giảng.
 
@@ -22,8 +22,8 @@ pre: " <b> 1.9. </b> "
 | 4 | 04/03 | Tích hợp hệ thống Multi-agent để Chatbot có tính chuyên môn cao. |
 | 5 | 05/03 | Xây dựng giao diện Chatbot bằng Next.js, hỗ trợ định dạng Markdown. |
 | 6 | 06/03 | Tối ưu hóa Prompt Engineering để nâng cao chất lượng phản hồi. |
-| 7 | 07/03 | Kiểm thử tính năng Chatbot trên cả giao diện Web và Mobile. |
-| CN | 08/03 | Đánh giá hiệu quả Chatbot cùng đội ngũ phát triển AI. |
+| 7 | 07/03 | Kiểm thử tính năng Chatbot trên giao diện Web. |
+
 
 ### Kết quả đạt được tuần 9:
 * Chatbot đã có khả năng trả lời các câu hỏi dựa trên nội dung bài giảng.

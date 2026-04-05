@@ -22,8 +22,6 @@ pre: " <b> 1.8. </b> "
 | 4 | 25/02 | Tích hợp Amazon SES để gửi email kết quả tự động cho sinh viên. |
 | 5 | 26/02 | Thiết lập Redis để cache kết quả tìm kiếm và danh sách lớp học. |
 | 6 | 27/02 | Sửa lỗi định dạng tiếng Việt khi xuất báo cáo từ MongoDB. |
-| 7 | 28/02 | Kiểm tra luồng gửi email thực tế với tài khoản Amazon SES. |
-| CN | 01/03 | Review mã nguồn module báo cáo cùng nhóm Backend. |
 
 ### Kết quả đạt được tuần 8:
 * Hệ thống có khả năng quản lý và xuất dữ liệu báo cáo chuyên nghiệp.

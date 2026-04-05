@@ -23,7 +23,7 @@ pre: " <b> 1.6. </b> "
 | Thu | 12/02 | Developed the exam creation form with multiple-choice question features. |
 | Fri | 13/02 | Integrated Tailwind CSS v4 for core UI components (Buttons, Cards, Modals). |
 | Sat | 14/02 | Verified responsive layouts on Mobile and Tablet devices. |
-| Sun | 15/02 | Optimized page rendering performance using Server Components. |
+
 
 ### Week 6 Achievements:
 * Completed a professional Dashboard interface framework.

@@ -21,8 +21,6 @@ pre: " <b> 1.11. </b> "
 | 3-4 | 17-18/03 | Chỉnh sửa nội dung, sơ đồ kiến trúc và mã nguồn trong báo cáo. |
 | 5 | 19/03 | Rà soát Nhật ký công việc (Worklog) đảm bảo tính chuyên nghiệp. |
 | 6 | 20/03 | Đóng gói mã nguồn EduTrust và chuẩn bị hướng dẫn cài đặt Docker. |
-| 7 | 21/03 | Soạn thảo slide thuyết trình tổng kết tiến độ và kết quả. |
-| CN | 22/03 | Kiểm tra tổng thể tệp báo cáo lần cuối trước khi nộp thử. |
 
 ### Kết quả đạt được tuần 11:
 * Hoàn thiện bản thảo báo cáo đồ án với đầy đủ các nội dung chuyên môn.

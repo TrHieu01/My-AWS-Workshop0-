@@ -17,11 +17,11 @@ pre: " <b> 1.3. </b> "
 | --- | --- | --- |
 | Mon | 19/01 | Held team meeting to finalize core modules: Online Exam, AI Monitoring, and Chatbot. |
 | Tue | 20/01 | Listed Feature Specifications for three roles: Admin, Teacher, and Student. |
-| Wed | 21/01 | Wrote SRS documentation detailing dashboard views and violation logic. |
+| Wed | 21/01 | Designed data flows for real-time camera proctoring features. |
 | Thu | 22/01 | Explored MongoDB Atlas and designed the data schema (collections: users, exams, violations). |
 | Fri | 23/01 | Drafted the Platform Architecture combining FastAPI and Next.js. |
-| Sat | 24/01 | Designed data flows for real-time camera proctoring features. |
-| Sun | 25/01 | Reviewed all initial designs with the team's AI Engineers. |
+
+
 
 ### Week 3 Achievements:
 * Completed the EduTrust architecture framework designed for AWS scalability.

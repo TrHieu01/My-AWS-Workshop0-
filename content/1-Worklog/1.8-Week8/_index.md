@@ -22,8 +22,6 @@ pre: " <b> 1.8. </b> "
 | Wed | 25/02 | Integrated Amazon SES for automated result email delivery. |
 | Thu | 26/02 | Set up Redis to cache search results and class lists. |
 | Fri | 27/02 | Fixed encoding issues when exporting reports from MongoDB. |
-| Sat | 28/02 | Verified live email delivery using the Amazon SES account. |
-| Sun | 01/03 | Source code review for the reporting module with the Backend team. |
 
 ### Week 8 Achievements:
 * System capability for professional data management and reports.

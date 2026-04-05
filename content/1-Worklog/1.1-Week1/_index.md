@@ -8,7 +8,7 @@ pre: " <b> 1.1. </b> "
 
 ### Week 1 Objectives:
 * Form the project group and finalize the "EduTrust" topic.
-* Set up the team's working environment using Git and Jira.
+* Set up the team's working environment using Git and Notion.
 * Initial research on necessary Cloud services (IAM, S3, Amplify).
 
 ### Tasks to be carried out this week:
@@ -19,8 +19,8 @@ pre: " <b> 1.1. </b> "
 | Wed | 07/01 | Set up Git monorepo structure and team workflow protocols. |
 | Thu | 08/01 | Initialized Jira project and assigned roles to members. |
 | Fri | 09/01 | Registered personal AWS account and configured MFA for root security. |
-| Sat | 10/01 | Researched IaaS/PaaS models suitable for Fullstack development. |
-| Sun | 11/01 | Week summary and preparation for system analysis. |
+
+
 
 ### Week 1 Achievements:
 * Finalized the project topic and created an initial development roadmap.

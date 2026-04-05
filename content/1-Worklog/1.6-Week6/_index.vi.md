@@ -23,7 +23,7 @@ pre: " <b> 1.6. </b> "
 | 5 | 12/02 | Phát triển form tạo đề thi với tính năng thêm câu hỏi trắc nghiệm. |
 | 6 | 13/02 | Tích hợp Tailwind CSS v4 cho các thành phần UI (Buttons, Cards, Modals). |
 | 7 | 14/02 | Kiểm tra hiển thị Dashboard trên Mobile và Tablet. |
-| CN | 15/02 | Tối ưu hóa hiệu năng render trang bằng Server Components. |
+
 
 ### Kết quả đạt được tuần 6:
 * Hoàn thiện khung giao diện Dashboard chuyên nghiệp.

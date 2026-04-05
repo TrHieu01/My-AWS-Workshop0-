@@ -22,8 +22,7 @@ pre: " <b> 1.7. </b> "
 | Wed | 18/02 | Configured Application Load Balancer for traffic distribution. |
 | Thu | 19/02 | Integrated SSL (HTTPS) for the domain via AWS Certificate Manager. |
 | Fri | 20/02 | Performed Load Testing to verify infrastructure capacity. |
-| Sat | 21/02 | Completed network infrastructure documentation (Security Groups). |
-| Sun | 22/02 | Basic network performance and security assessment. |
+
 
 ### Week 7 Achievements:
 * AWS network infrastructure set up according to project best practices.

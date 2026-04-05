@@ -17,10 +17,9 @@ pre: " <b> 1.2. </b> "
 | 2 | 12/01 | Hoàn tất đăng ký AWS Free Tier, tạo IAM User và Access Key. |
 | 3 | 13/01 | Cài đặt AWS CLI và kiểm tra kết nối với lệnh `aws configure`. |
 | 4 | 14/01 | Khởi tạo EC2 Instance (Ubuntu), cấu hình Security Group cơ bản. |
-| 5 | 15/01 | Thử nghiệm SSH vào server và cài đặt môi trường Python cơ bản. |
+| 5 | 15/01 | Brainstorming ý tưởng về giao diện người dùng cho EduTrust. |
 | 6 | 16/01 | Tạo S3 Bucket, thử nghiệm upload/download ảnh minh chứng vi phạm. |
-| 7 | 17/01 | Tìm hiểu về Elastic IP và các quy tắc bảo mật mạng trong VPC. |
-| CN | 18/01 | Brainstorming ý tưởng về giao diện người dùng cho EduTrust. |
+
 
 ### Kết quả đạt được tuần 2:
 * Làm chủ các thao tác quản trị cơ bản trên AWS qua Console và CLI.
