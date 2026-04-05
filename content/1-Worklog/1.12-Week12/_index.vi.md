@@ -22,8 +22,7 @@ pre: " <b> 1.12. </b> "
 | 4 | 25/03 | Kiểm tra tính nhất quán dữ liệu trên MongoDB và tối ưu Backend. |
 | 5 | 26/03 | Audit phân quyền hệ thống lần cuối và khảo sát người dùng thử. |
 | 6 | 27/03 | Đóng gói bản Demo EduTrust và hoàn thiện hồ sơ nộp bài. |
-| 7 | 28/03 | Chính thức nộp báo cáo đồ án thành công. |
-| CN | 29/03 | Tổng kết và dọn dẹp các tài nguyên Cloud không cần thiết. |
+| 7 | 28/03 | Kiểm tra lần cuối và nộp báo cáo đồ án. |
 
 ### Kết quả đạt được tuần 12:
 * Hệ thống vận hành mượt mà, không còn lỗi nghiêm trọng.

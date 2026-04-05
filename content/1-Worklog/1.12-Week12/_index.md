@@ -22,8 +22,8 @@ pre: " <b> 1.12. </b> "
 | Wed | 25/03 | Verified MongoDB data consistency and optimized Backend performance. |
 | Thu | 26/03 | Conducted final system permission audit and user trial surveys. |
 | Fri | 27/03 | Packaged EduTrust Demo and finalized the submission files. |
-| Sat | 28/03 | Successfully submitted the official project report. |
-| Sun | 29/03 | Final summary and cleaned up unnecessary Cloud resources. |
+| Sat | 28/03 | Final check for the official project report. |
+
 
 ### Week 12 Achievements:
 * System operates smoothly with no critical bugs identified.
