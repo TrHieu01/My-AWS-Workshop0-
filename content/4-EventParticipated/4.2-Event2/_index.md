@@ -77,7 +77,9 @@ The workshop delivered a logical learning journey from infrastructure to platfor
 
 ### Event Photos
 
-(No photos available yet.)
+<div style="text-align: center;">
+  <img src="/images/4-EventParticipated/event2.jpg" alt="Event 2 photo" style="max-width: 920px; width: 100%; height: auto;" />
+</div>
 
 ### Conclusion
 

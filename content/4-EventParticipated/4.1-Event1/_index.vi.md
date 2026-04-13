@@ -10,6 +10,10 @@ pre: " <b> 3.1. </b> "
 
 ![Cloud Mastery 2026 #1](/images/4-EventParticipated/event1-banner.png)
 
+<div style="text-align: center;">
+  <img src="/images/4-EventParticipated/event1.jpg" alt="Hình ảnh Event 1" style="max-width: 920px; width: 100%; height: auto;" />
+</div>
+
 ### Mục tiêu sự kiện
 
 - Khám phá các ứng dụng thực tế của Trí tuệ nhân tạo tạo sinh (GenAI) trong phát triển dự án.  
