@@ -19,16 +19,9 @@ Trong quá trình thực tập, em đã tham gia 3 events, với mỗi event là
 
 ---
 
-### [Event 3](4.3-Event3/)
-&emsp;**Tên sự kiện:** Cloud Mastery Series #3: AWS Networking, IAM & Security
-
-&emsp;**Thời gian:** Ngày 11 tháng 04 năm 2026
-
-&emsp;**Địa điểm:** FPTU - Hall Academic A 
-
-&emsp;**Vai trò trong sự kiện:** Người tham dự / Người học
 
 
+---
 
 ### [Event 2](4.2-Event2/)
 &emsp;**Tên sự kiện:** Cloud Mastery Series #2: DevOps Fundamentals & Infrastructure
@@ -38,3 +31,14 @@ Trong quá trình thực tập, em đã tham gia 3 events, với mỗi event là
 &emsp;**Địa điểm:** FPTU - Hall Academic A
 
 &emsp;**Vai trò trong sự kiện:** Người tham dự 
+
+---
+
+### [Event 3](4.3-Event3/)
+&emsp;**Tên sự kiện:** Cloud Mastery Series #3: AWS Networking, IAM & Security
+
+&emsp;**Thời gian:** Ngày 11 tháng 04 năm 2026
+
+&emsp;**Địa điểm:** FPTU - Hall Academic A 
+
+&emsp;**Vai trò trong sự kiện:** Người tham dự / Người học
