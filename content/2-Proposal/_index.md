@@ -89,28 +89,24 @@ The project is divided into 5 main phases:
 - **Week 10**: Integration testing, performance optimization, and Dockerization.
 
 ### 6. Budget Estimation
-**Assumptions**
-- Small environment (small staging/production), low-to-medium traffic.
-- Backend runs on EC2 Auto Scaling (t3.small, 2 instances) behind an ALB 24/7.
-- Frontend hosted on Amplify + CloudFront with WAF enabled.
-- Violation evidence stored in S3 (~10–20 GB/month).
+**Monthly infrastructure costs**
 
-**Estimated monthly infrastructure costs**
-- VPC Endpoints (interface endpoints for ECR/SSM/STS/Logs…): ~30–60 USD
-- EC2 Auto Scaling (2 × t3.small): ~30–40 USD
-- Application Load Balancer: ~16–25 USD
-- Amazon S3 (evidence images, ALB logs, Terraform state): ~2–6 USD
-- Amazon CloudFront + Amplify: ~1–5 USD
-- AWS WAF: ~5–10 USD
-- Amazon ElastiCache (Redis — small cache): ~15–25 USD
-- Amazon DynamoDB (low traffic): ~1–3 USD
-- Amazon ECR (image storage): ~1–3 USD
-- Amazon Cognito (<= 50k MAU): ~0–2 USD
-- Amazon CloudWatch + VPC Flow Logs + SNS: ~5–10 USD
-- AWS KMS + SSM Parameter Store: ~1–3 USD
-- Data Transfer: ~2–6 USD
-
-**Total estimate**: ~110–195 USD/month (includes VPC Endpoints; depends on traffic and S3 usage).
+| Service | Day ($) | Forecasting 1 month ($) |
+| --- | ---: | ---: |
+| VPC | 0.00 | 0.00 |
+| EC2-Other | 1.57 | 47.10 |
+| EC2-Instances | 1.27 | 38.10 |
+| Elastic Load Balancing | 0.61 | 18.30 |
+| Amplify | 0.62 | 18.60 |
+| WAF | 0.53 | 15.90 |
+| ElastiCache | 0 - 1.15 | 9 - 14 |
+| KMS | - | 2.00 |
+| Route 53 | 0.51 |  |
+| ECR | - | 0.3 (3GB) |
+| S3 | - | 0.03 (1GB) |
+| DynamoDB | 0.00 | 0.00 |
+| Cognito | 0.00 | 0.00 |
+| SNS | 0.00 | 0.00 |
 
 **Third-party API costs**
 - OpenAI/LiteLLM API: depends on usage.
