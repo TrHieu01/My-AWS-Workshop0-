@@ -1,4 +1,4 @@
----
+﻿---
 title : "WAF Frontend"
 date : 2024-01-01
 weight : 4
@@ -10,23 +10,15 @@ pre : " <b> 4.6.4 </b> "
 
 Bảo vệ layer frontend (CloudFront) bằng WAF.
 
-#### Các bước triển khai
+#### Quản lý WAF do Amplify tạo
 
-1. Tạo Web ACL trên AWS WAF.
-2. Chọn scope CloudFront và thêm managed rule groups cơ bản.
-3. Gắn Web ACL vào CloudFront distribution của Amplify.
+Khi triển khai ứng dụng bằng AWS Amplify, một Web ACL (WAF) thường đã được tự động tạo và gắn cho CloudFront Distribution của frontend. Bạn không cần phải tự tạo từ đầu.
 
-#### Kiểm tra rule hoạt động
+![WAF](waf.png)
 
-1. Thử áp dụng rate limit hoặc IP block để xác nhận rule có hiệu lực.
-2. Theo dõi log/metrics trong CloudWatch để đánh giá false positive.
 
-1. Vào AWS WAF, tạo Web ACL.
-2. Chọn scope CloudFront và thêm managed rule groups.
-3. Mở CloudFront Distribution của Amplify.
-4. Chọn Web ACL vừa tạo trong phần WAF.
-5. Lưu cấu hình và chờ cập nhật hoàn tất.
+*Kiểm tra WAF*
 
 #### Lưu ý
 
-1. Ưu tiên bật chế độ monitor trước khi chuyển sang block.
+1. Luôn ưu tiên bật chế độ theo dõi (Count) trước, kết hợp xem xét log CloudWatch, sau đó mới chuyển sang chế độ chặn hoàn toàn (Block) nếu cần thiết để tránh làm gián đoạn người dùng hợp lệ.
