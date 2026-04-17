@@ -22,12 +22,12 @@ Cognito provides User Pools to manage users and App Clients to issue access toke
 #### Required Frontend Environment Variables
 
 1. COGNITO_USER_POOL_ID: User Pool identifier.
-    ![Create User Pool](overview.png)
+    ![Create User Pool](/images/5-Workshop/4.6-frontend-deployment-security/4.7.3-cognito/overview.png)
     
     *Go to User Pool and get user pool id*
 
 2. COGNITO_CLIENT_ID: App Client identifier.
-    ![Create App Client](app_client.png)
+    ![Create App Client](/images/5-Workshop/4.6-frontend-deployment-security/4.7.3-cognito/app_client.png)
     
     *Go to App Client and get app client id.*
 
@@ -38,12 +38,12 @@ Cognito provides User Pools to manage users and App Clients to issue access toke
 1. Perform login and logout on the UI to check session status.
 2. Verify the returned tokens (ID/Access token) and confirm that API calls have valid Authorization.
 
-    ![check login/logout and token](check.png)
+    ![check login/logout and token](/images/5-Workshop/4.6-frontend-deployment-security/4.7.3-cognito/check.png)
     
     *Check login/logout and token*
 
 1. Check group
 
-    ![check group](group.png)
+    ![check group](/images/5-Workshop/4.6-frontend-deployment-security/4.7.3-cognito/group.png)
     
     *Check group*

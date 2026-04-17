@@ -1,4 +1,4 @@
-﻿---
+---
 title : "WAF Frontend"
 date : 2024-01-01
 weight : 4
@@ -14,7 +14,7 @@ Bảo vệ layer frontend (CloudFront) bằng WAF.
 
 Khi triển khai ứng dụng bằng AWS Amplify, một Web ACL (WAF) thường đã được tự động tạo và gắn cho CloudFront Distribution của frontend. Bạn không cần phải tự tạo từ đầu.
 
-![WAF](waf.png)
+![WAF](/images/5-Workshop/4.6-frontend-deployment-security/4.7.4-waf-frontend/waf.png)
 
 
 *Kiểm tra WAF*
